@@ -30,7 +30,7 @@ Some sections (like News) are currently placeholders and will be updated later.
 Available on itch.io:
 https://ashn-veyl.itch.io/dungeon-crush
 
-##🛠 Technologies Used
+## 🛠 Technologies Used
 
 - HTML5
 - CSS3
