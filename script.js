@@ -14,10 +14,16 @@ document.querySelectorAll('.news-card').forEach(card => {
 
 (function (){
  const menuButton = document.getElementById('MenuTuggel');
+ const langswitchButton = document.getElementById('LangSwitchButton');
  const nav = document.getElementById('mainNav');
+ const langSwitch = document.getElementById('LangSwitch');
  menuButton.addEventListener('click', () => {
         nav.classList.toggle('open');
         menuButton.classList.toggle('open');
+      });
+ langswitchButton.addEventListener('click', () => {
+        langSwitch.classList.toggle('open');
+        langswitchButton.classList.toggle('open');
       });
  document.getElementById('year').textContent = new Date().getFullYear();
 })();

@@ -108,7 +108,7 @@ nav a:hover {
  display: fixed;
  gap: 46px;
  flex-direction:column;
- position:absolute; right:20vw; top:11vh;
+ position:absolute; right:20vw; top:-90vh;
  padding: 60px 50px;
  margin: 0;
  background: var(--glass-nav-bg);
@@ -116,11 +116,16 @@ nav a:hover {
  border: 1px solid var(--glass-border);
  border-radius: 9px;
  z-index: 1000;
- transition: .6s;
+ transition: .4s;
 }
 
 #LangSwitch a:nth-child(1){
  flex-direction: row;
+}
+
+#LangSwitch.open{
+ display: fixed;
+ position:absolute; right:5vw; top:11vh;
 }
 
 header button:hover{
@@ -187,6 +192,7 @@ section {
 /* ================= NEWS ================= */
 .news h2,
 .games h2,
+.artworks h2,
 .about h1{
   font-family: 'Cinzel', serif;
   font-size: 42px;
@@ -274,6 +280,42 @@ section {
   font-size: 14px;
   opacity: 0.75;
 }
+
+/* ================= ARTWORKS ================= */
+
+.art-grid {
+ width: 100%;
+ display: flex;
+ gap: 5px;
+ overflow-x: auto;
+ padding-bottom: 20px;
+ padding-right: 16px;
+}
+
+.art-card {
+ background: var(--glass-bg);
+ backdrop-filter: var(--blur);
+ border: 1px solid var(--glass-border);
+ border-radius: 15px;
+ padding: 12px;
+ min-width: 170px;
+ min-height: 170px;
+}
+
+.art-card img{
+ height: 100px;
+}
+
+.art-info {
+ 
+}
+
+.art-info h3{
+ color: var(--accent);
+ font-size: 25px;
+ 
+}
+
 
 /* ================= FOOTER ================= */
 footer {
